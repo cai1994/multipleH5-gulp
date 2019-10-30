@@ -1,0 +1,175 @@
+@charset"utf-8";
+
+//@import url("./iphoneX.less");
+@import url('~@common/less/color.less');
+@import url('~@common/less/iconfont.less');
+@import url("./baseClass.less");
+
+//1px边框
+@import url("~@common/less/1px_border.less");
+
+/*start 样式重置*/
+body,h1,h2,h3,h4,h5,h6,p,ul,li,img,i,iframe,a,input,button{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    list-style: none;
+    text-decoration: none;
+}
+html,body,form,fieldset,p,div,h1,h2,h3,h4,h5,h6 {
+    -webkit-text-size-adjust: none
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal
+}
+blockquote,q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none
+}
+
+strong,
+var,
+em,
+i {
+    font-style: normal;
+    font-weight: normal
+}
+
+a {
+    text-decoration: none;
+    color: @c002
+}
+
+img {
+    display: block;
+    width: 100%
+}
+
+del {
+    text-decoration: line-through
+}
+
+input[type=search] {
+    -webkit-appearance: none
+}
+
+input::-webkit-search-cancel-button {
+    display: none
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 25.00rem #FFFFFF inset;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+* {
+    box-sizing: border-box;
+
+    //去掉Unable to preventDefault inside passive event listener due to target being treated as passive的错误提示
+    //google浏览器上
+    touch-action: pan-y;
+
+    vertical-align: middle;
+}
+/*样式重置 end*/
+
+
+
+
+//大屏适配宽度限制
+body {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 750px;
+    font-family: "Microsoft YaHei", Arial, "Helvetica";
+    background: @c066;
+    color: @c002;
+    font-size: 0.6rem;
+    /*加了relative会引发iscroll失效*/
+    /*position: relative;*/
+} 
+
+html,body {
+
+    width: 100%;
+    height: 100%;
+    
+}
+
+// input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+//     color: @c001;
+//     //font-size: 0.70rem;
+// } 
+
+
+// ::-moz-placeholder { color: @c001 }
+// ::-webkit-input-placeholder { color:@c001 }
+// :-ms-input-placeholder { color:@c001 }
+
+
+input, textarea{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+//兼容ios手机
+input[type=text]:disabled,input[type=number]:disabled,input[type=tel]:disabled,input[type=password]:disabled,{ 
+    -webkit-opacity:1;
+    opacity: 1;
+    color: @c002;
+    -webkit-text-fill-color: @c002;
+}
+
+/*对input的placeholder属性设置样式*/
+input::-webkit-input-placeholder,
+input::-ms-input-placeholder,
+input::-moz-placeholder{
+   color: #3c3c3c;
+    //font-size: 0.30rem;
+}
+/*对textarea的placeholder属性设置样式*/
+// textarea::-webkit-input-placeholder {
+//  color:@c010;
+//  font-size: 0.30rem;
+// }
+
+//去掉checkbox, radio的默认样式
+input[type=checkbox], input[type=radio]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    color: transparent;
+    background: transparent;
+
+    &:checked{
+        color: transparent;
+        background: transparent;
+    }
+
+    //ie兼容性
+    &::-ms-check{
+        border:0;
+        background: transparent;
+        color: transparent;
+    }
+}
+
+
+

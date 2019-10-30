@@ -1,0 +1,44 @@
+<!--
+    HTML页面的模板
+
+  作为所有页面的webpack打包模板，和其他页面的.vue文件的<template>里面的dom结构合起来成为一个页面
+
+  打包后的文件后缀是.html
+
+  本模板里，引用的header.css  header.js  zepto及mui文件因是直接在页面中引用的，不通过vue打包
+
+  title在webpack打包vue文件时直接打包出来
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="/commonResources/common/vendor/mui/css/mui.min.css">
+    <% for (var chunk in htmlWebpackPlugin.options.cssChunks) {   %>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.options.cssChunks[chunk]+'?v='+Math.random(0,16) %>">
+    <% } %>
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+</head>
+
+<body>
+    <div id="wrap">
+    </div>
+    <script type="text/javascript" src="/commonResources/common/vendor/zepto/zepto.min.js"></script>
+    <script type="text/javascript" src="/commonResources/common/vendor/mui/js/mui.min.js"></script>
+    <script type="text/javascript" src="//at.alicdn.com/t/font_1050284_4gxdhm0g7yi.js"></script>
+    <script type="text/javascript" src="/commonResources/common/root.js"></script>
+     <!-- <script type="text/javascript" src="/commonResources/common/js/md/lgbMd.js"></script> -->
+    <% for (var chunk in htmlWebpackPlugin.options.jsChunks) {   %>
+    <script type="text/javascript" src="<%=htmlWebpackPlugin.options.jsChunks[chunk]+'?v='+Math.random(0,16) %>"></script>
+    <% } %>
+</body>
+
+</html>

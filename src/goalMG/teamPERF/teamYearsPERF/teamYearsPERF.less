@@ -1,0 +1,108 @@
+@import '~@common/less/color.less';
+
+.page {
+    background-color: #fff;
+    height: 100%;
+    padding-top: 2.25rem;
+
+    header {
+        width: 100%;
+        max-width: 750px;
+        height: 1.5rem;
+        background: transparent;
+        font-size: .85rem;
+        padding: 1rem .5rem 0.25rem;
+        line-height: 1.8rem;
+        position: fixed;
+        z-index:100;
+        top: 0;
+        background-color: #fff;
+        margin-bottom: .5rem;
+        border-bottom: #f1f1f1 0.05rem solid;
+        box-sizing: content-box;
+        .filter {
+            position: absolute;
+            top: 1.25rem;
+            left: 0.6rem;
+            width: .75rem;
+            height: 1.0rem;
+            z-index: 9;
+        }
+
+        .title {
+            font-size: 0.9rem;
+            height: 1.5rem;
+            line-height: 1.5rem;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .toMonth {
+            position: absolute;
+            right: 3vw;
+            color: @cor-3994ea;
+        }
+    }
+
+    .brachTitle {
+        margin: 0.2rem 0 0.3rem;
+        text-align: left;
+        font-weight: bold;
+        font-size: 0.85rem;
+        position: relative;
+        padding-left:5vw;
+        color:#fff;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0.2rem;
+            left: 0;
+            display: inline-block;
+            width: 0.2rem;
+            height: 0.6rem;
+            background-color: #fff;
+        }
+    }
+
+    .dataDetail {
+        background: linear-gradient(#303344, #3d4154);
+        background: linear-gradient(left, #303344, #3d4154);
+        background: linear-gradient(right, #3d4154, #303344);
+        background: linear-gradient(-90deg, #303344, #3d4154);
+        padding-top: 1rem;
+
+        .datasPERF {
+            padding-bottom: 5rem;
+            margin: 0 5vw;
+        }
+    }
+
+    .chartBlock {
+        margin-top: -5rem;
+        background-color: #fff;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        padding-top: 1rem;
+    }
+
+    .footNote {
+        margin: 0 5vw;
+        font-size: 0.7rem;
+
+        .tips {
+            p {
+                background-color: @cor-ccc;
+                border-radius: 0.6rem;
+                display: inline-block;
+                width: 2.5rem;
+                height: 1.2rem;
+                line-height: 1.2rem;
+                text-align: center;
+                color: #fff;
+                font-size: 0.6rem;
+            }
+        }
+    }
+}

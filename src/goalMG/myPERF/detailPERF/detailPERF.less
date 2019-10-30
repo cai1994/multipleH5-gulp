@@ -1,0 +1,102 @@
+@import '~@common/less/color.less';
+
+.page {
+    background-color: #fff;
+    padding-top: 2.25rem;
+    height: 100%;
+
+    header {
+        width: 100%;
+        max-width: 750px;
+        height: 1.5rem;
+        background: transparent;
+        font-size: .85rem;
+        padding: 1rem .5rem 0.25rem;
+        box-sizing: content-box;
+        line-height: 1.8rem;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        box-shadow: 0.05rem 0.05rem 0.2rem #9e9d9d;
+    }
+
+    header {
+        .filter {
+            position: absolute;
+            top: 1rem;
+            left: 0.6rem;
+            width: .75rem;
+            height: 1.0rem;
+            z-index: 9;
+        }
+
+        .title {
+            font-size: 0.9rem;
+            height: 1.5rem;
+            line-height: 1.5rem;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+        }
+    }
+
+    .listWrap {
+        top: 2.75rem;
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+    }
+
+    ul.tableList {
+        width: 100%;
+        height: auto;
+
+        &.listTemp {
+            display: none;
+        }
+
+        & li {
+            width: 90%;
+            margin: 0 auto;
+            background: #fff;
+            margin-bottom: 0.4rem;
+            padding: 0.6rem;
+            font-size: 0.75rem;
+            border-radius: 0.02rem;
+            border: #323131 0.01rem solid;
+            box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem #f9f9f9;
+            .person{
+                
+                background-color: #dfdfed;
+            }
+            .perfType{
+                margin-left: 1.4rem;
+                background-color: #f5ede8;
+            }
+            .title {
+                font-weight: bold;
+                font-size: 0.8rem;
+                color: #121c32;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0.2rem;
+                    left: -0.6rem;
+                    display: inline-block;
+                    width: 0.2rem;
+                    height: 0.8rem;
+                    background-color: @cor-ff6b00;
+                }
+            }
+
+            span.labelText {
+                display: inline-block;
+                width: 30%;
+                text-align: left;
+            }
+        }
+    }
+}

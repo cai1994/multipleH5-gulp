@@ -1,0 +1,129 @@
+/**
+ *
+ */
+
+ @import url('../../../../../common/less/color.less');
+
+.btn{
+
+	&.type_1{
+		background: @c005;
+		font-size: 0.22rem;
+		color: @c006;
+		border: 1px solid @c006;
+		border-radius: 0.22rem;
+
+		//点击的效果，此处需要重置mui默认的
+		&:active{
+			background: @c005;
+			color: @c006;
+		}
+	}
+	&.type_2{
+		background: @c005;
+		font-size: 0.26rem;
+		color: @c045;
+		border: 1px solid @c045;
+		border-radius: 0.23rem;
+
+		//点击的效果，此处需要重置mui默认的
+		&:active{
+			background: @c005;
+			color: @c045;
+		}
+	}
+
+	//方形按钮，白色背景棕色文字
+	&.type_3{
+		background: @c005;
+		font-size: 0.32rem;
+		color: @c045;
+		border-radius: 0;
+
+		//点击的效果，此处需要重置mui默认的
+		&:active{
+			background: @c005;
+			color: @c045;
+		}
+	}
+
+	//方形按钮，黄色背景棕色文字
+	&.type_4{
+		background: @c006;
+		font-size: 0.32rem;
+		color: @c045;
+		border-radius: 0;
+
+		//点击的效果，此处需要重置mui默认的
+		&:active{
+			background: @c006;
+			color: @c048;
+		}
+	}
+
+
+
+
+	//没有边框的紫色字
+	&.type_5{
+		display: block;
+		font-size: 0.26rem;
+		color: @c045;
+		text-align: right;
+
+		//点击的效果，此处需要重置mui默认的
+		&:active{
+			color: @c045;
+		}
+	}
+	//黄色背景椭圆
+	&.type_6{
+		font-size: 0.26rem;
+		background: @c006;
+		text-align: center;
+		line-height: 0.46rem;
+		border-radius: 0.23rem;
+
+		//点击的效果，此处需要重置mui默认的
+		&:active{
+			background: @c006;
+		}
+	}
+	//红色字体
+	&.type_7{
+		font-size: 0.26rem;
+		color: @c055;
+		text-align: right;
+
+		//点击的效果，此处需要重置mui默认的
+		&:active{
+			color: @c055;
+		}
+	}
+
+	//方形按钮，白色背景红色文字
+	&.type_8{
+		background: @c005;
+		font-size: 0.32rem;
+		color: @c055;
+		border-radius: 0;
+
+		//点击的效果，此处需要重置mui默认的
+		&:active{
+			background: @c005;
+			color: @c055;
+		}
+	}
+
+	//按钮不可点击
+	&.type_9{
+		color: @c005;
+		font-size: 0.32rem;
+		background-color: @c004;
+		//点击的效果，此处需要重置mui默认的
+		&:active{
+			color: @c005;
+		}
+	}
+
+}

@@ -1,0 +1,75 @@
+/**
+ * 复选框的样式
+ */
+
+@import url('../../../../less/color.less');
+
+.check{
+
+	&, *{
+		vertical-align: top; 
+	}
+
+	.checkBox{
+		display: inline-block;
+		//vertical-align: top;
+		margin-right: 8px;
+		position: relative;
+		width: 0.22rem;
+		height: 0.22rem;
+
+		
+		//margin-top: 1px;
+
+		input[type=checkbox], input[type=radio]{
+			width: 0.22rem;
+			height: 0.22rem;
+			position: absolute;
+			left: 0;
+			cursor: pointer;
+			z-index: 2;
+
+			&+label{
+				display: inline-block;
+				width: 0.22rem;
+				height: 0.22rem;
+				position: relative;
+				line-height: 0.22rem;
+				vertical-align: top;
+
+				&:after{
+					content: '\e606';
+					position: absolute;
+					top: 0;
+					left: 0;
+					//background: #fff;
+					//height: 100%;
+					//width: 100%;
+					font-size: 0.22rem;
+					color: @c003;
+					//color: #f4cf5c;
+				}
+			}
+
+			&:checked +label{
+
+				&:after{
+					content: '\e607';
+					color: @c006;
+					//background: #fff;
+				}
+				
+			}
+		}
+
+		&+span, &+div{
+			display: inline-block;
+			//vertical-align: top;
+			font-size: 0.22px;
+			//line-height: 16px;
+			color: @c050;
+			cursor: pointer;
+		}
+	}
+}
+

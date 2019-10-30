@@ -1,0 +1,93 @@
+/**
+ * 订单 页面上方的四个步骤
+ *
+ * @author yangjinlai 2018-07-30
+ */
+
+ @import url('../../../less/color.less');
+
+.orderProcess{
+	background: @c005;
+	padding-top: 0.2rem;
+	padding-bottom: 0.24rem;
+
+	li{
+		text-align: center;
+
+		&:first-child{
+			div:before{
+				height: 0;
+				width: 0;
+				border: none;
+			}
+		}
+
+		&:last-child{
+			div:after{
+				height: 0;
+				width: 0;
+			}
+		}
+
+		&.active{
+			div:before{
+				border-color: @c049;
+			}
+			span.out{
+				background: @c049;
+			}
+			span.in{
+				background:  @c006;
+			}
+		}
+
+		div{
+
+			height: 0.3rem;
+			position: relative;
+
+			&:before{
+				position: relative;
+				left: -0.7rem;
+				width: 1.4rem;
+				border-bottom: 1px dashed @c048;
+				content: '';
+				float: left;
+				margin-top: 0.15rem;
+			}
+			//圆圈
+			span{
+				border-radius: 0.3rem;
+				display: inline-block;
+
+				&.out{
+					background: @c052;
+					width: 0.3rem;
+					height: 0.3rem;
+					position: absolute;
+					top: 0rem;
+					left: 0;
+					right: 0;
+					bottom: 0rem;
+					margin: auto;
+					display: flex;
+				    justify-content: center;
+				    align-items: center;
+				}
+
+				&.in{
+					background: @c051;
+					width: 0.16rem;
+					height: 0.16rem;
+				}
+			}
+		}
+		
+		.title{
+			margin-top: 0.2rem;
+			font-size: 0.26rem;
+			color: @c045;
+		}
+	}
+
+}

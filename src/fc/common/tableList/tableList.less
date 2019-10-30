@@ -1,0 +1,242 @@
+@import '~@common/less/color.less';
+
+//列表
+ul.tableList {
+    width: 100%;
+    height: auto;
+    
+    & li {
+        width: 100%;
+        padding-top: .5rem;
+        background: #fff;
+        margin-bottom: .5rem;
+        box-shadow: 0px 0px 1px 4px rgba(243,243,243,0.9);
+       & div {
+            width: 100%;
+            text-align: left;
+            padding-left: .75rem;
+            padding-right: .75rem;
+            &.a {
+                height: 2.2rem;
+                line-height: 2.2rem;
+                position: relative;
+                border-bottom: 1px solid @cor-d9d9d9;
+
+                &  span {
+                    font-size: .7rem;
+                    color: @cor-333; 
+                    margin-right: .3rem;
+                }
+                & a {
+                   width: 3rem;
+                   height: .925rem;
+                   line-height: .925rem;
+                   border-radius: 1.5rem;
+                   color: @cor-ff6b00;
+                   border: 1px solid @cor-ff6b00;
+                   font-size: .55rem;
+                   padding: .1rem .5rem;
+                }
+            }
+            &.b {
+                position: relative;
+                padding-top: .6rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                & > span {
+                    position: relative;
+                    font-size: .7rem;
+                    color: @cor-333;
+                    font-weight: bold;
+                }
+            }
+            &.c {
+                padding-top: .6rem;
+                padding-bottom: .6rem;
+                font-size: .6rem;
+                color: @cor-999;
+                & > label {
+                    font-size: .6rem;
+                    color: @cor-999;
+                    margin-right: .5rem;
+                }
+                & > span {
+                    font-size: .6rem;
+                    color: @cor-999;
+                    margin-right: .2rem;
+                }
+         
+            }
+            &.d {
+                text-align: right;
+                & a{
+                    display: inline-block;
+                    border-radius: 1.5rem;
+                    color: @cor-ff6b00;
+                    border: 1px solid @cor-ff6b00;
+                    background: @cor-ff6b00;
+                    padding: .3rem .5rem;
+                    color: #fff;
+                    font-size: .6rem;
+                } 
+            }
+        }
+
+    }
+  
+    & li.topBottomDivide {
+        background: transparent;
+        padding: 0;
+        margin-bottom: .5rem;
+
+        & .timeItem{
+            height: 2rem;
+            line-height: 1.5rem;
+            font-size: .6rem;
+            color: @cor-ccc;
+            text-align: center;
+        }
+
+        & .contentItem{
+            padding-top: .5rem;
+            background: #fff;
+            box-shadow: 0px 0px 1px 4px rgba(243,243,243,0.9);
+            padding: 0;
+            padding-bottom: 0.6rem;
+
+            & div{
+                padding-left: .75rem;
+                padding-right: .75rem;
+            }
+        }
+        & .contentItem.title{
+            position: relative;
+
+            & div {
+
+                &.a {
+                    height: auto;
+                    line-height: 1rem;
+                    padding-top: 0.6rem;
+                    padding-bottom: 0.6rem;
+                    position: relative;
+                    border-bottom: 1px solid @cor-d9d9d9;
+                    color: @cor-333;
+                    font-size: .7rem;
+                    margin-bottom: .2rem;
+                    word-break: break-all;
+                    
+                    
+                }
+                &.c{
+                    padding: 0;
+                    height: auto;
+                    line-height: 1.25rem;
+                    font-size: .6rem;
+                    padding-left: 0.75rem;
+                    padding-right: 0.75rem;
+                    overflow: hidden;
+    
+                    & span{
+                        float: left;
+                        display: inline-block;
+                        width: 3rem;
+                        
+                    }
+    
+                    & label{
+                        float: left;
+                        display: inline-block;
+                        width: 10rem;
+                        
+                    }
+                }
+                
+        
+            }
+
+        }
+        & .title:before{
+            content: '';
+            display: inline-block;
+            width: .25rem;
+            height: .65rem;
+            background: #ff6b00;
+            position: absolute;
+            top: 0.75rem;
+            left: 0rem;
+         }
+
+    }
+
+
+
+}
+
+ 
+ //tab标签样式
+ .listWrap{
+
+    .nav-wrapper{
+        background: #fff;
+        height: 2rem;   
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-bottom: 0.5rem;
+     }
+    
+     .mui-segmented-control.mui-scroll-wrapper{
+         height: 2rem;
+     }
+    
+     .mui-segmented-control.mui-scroll-wrapper .mui-scroll{
+        text-align: center;
+        font-size: .75rem;
+        color: @cor-999;
+        height: 2rem;
+     }
+    
+    
+     .mui-segmented-control.mui-segmented-control-inverted .mui-control-item{
+        width: 3.625rem;
+        height: 2rem;
+        line-height: 2rem;
+        padding: 0;
+        position: relative;
+    
+     }
+    
+     .mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+        color: @cor-ff6b00;
+    
+     }
+    
+     .mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active::before{
+        content: '';
+        display: inline-block;
+        width: 3.125rem;
+        height: .125rem;
+        background: @cor-ff6b00;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -1.51rem;
+      }
+    
+     .mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active::after{
+          content: '';
+          display: inline-block;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          margin-left: -0.2rem;
+          width: 0; 
+          height: 0; 
+          border-left: .2rem solid transparent; 
+          border-right: .2rem solid transparent; 
+          border-bottom: .4rem solid @cor-ff6b00;
+    }
+
+ }
+ 

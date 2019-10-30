@@ -1,0 +1,40 @@
+/**
+ * item组件的样式
+ *
+ * @author yangjinlai 2018-07-31
+ */
+
+ @import url('../../../less/color.less');
+
+
+.number_box{
+	margin: .2rem;
+	padding: .45rem .3rem .25rem .3rem;
+	border-radius: .1rem;
+	background: @c005;	
+ 	.number{
+ 		width: 100%;
+ 		font-size: .28rem;
+ 		height: .6rem;
+ 		color: @c006;
+ 		border-color: @c041;
+ 	}
+ 	.number_con{
+ 		margin-top: 0.3rem;
+		// display: flex;
+		font-size: .26rem;
+		color: @c050;
+		//display: none;
+		//justify-content: space-between;
+		.number_tit{
+			float: left;
+		}
+		.number_matter{
+			float: right;
+		}
+ 	}
+ 	.status{
+ 		float: right;
+ 		color: @c056;
+ 	}
+}

@@ -1,0 +1,175 @@
+@import '~@common/less/color.less';
+
+//列表
+ul.tableList {
+    width: 100%;
+    height: auto;
+    &.tableItem{
+        display: none;
+    }
+    & > li{
+        list-style: none;
+        display: inline-block;
+        width: 96%;
+        margin: .5rem 2% 0 2%;
+        background: #fff;
+        border: 0;
+        border-radius: 6px;
+        padding: .8rem 0 1rem 0;
+        -webkit-box-shadow: 0 0 10px #f3f3f3;
+        -moz-box-shadow: 0 0 10px #f3f3f3;
+        box-shadow: 0 0 10px #f3f3f3;
+        & .left{
+            width: 100%;
+            margin-bottom: 0.8rem;
+            p.top{
+                padding-left: .75rem;
+                font-size: .7rem;
+                position: relative;
+                margin-bottom: .375rem;
+                max-height: 1.75rem;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                line-height: 0.9rem;
+                word-break: break-all;
+                color: #333;
+            }
+            p.icon::before{
+                content: '';
+                display: inline-block;
+                width: .25rem;
+                height: .65rem;
+                background: #ff6b00;
+                position: absolute;
+                top: .11rem;
+                left: -.035rem;
+            }
+            p.bottom{
+                padding-left: .75rem;
+                font-size: .6rem;
+                color: #a8a8a8;
+            }
+        }
+        & .bottom{
+            & li{
+                width: 36%;
+                margin: 0;
+                float: left;
+                padding: 0;
+                box-shadow: none;
+                & p.top{
+                    text-align: center;
+                    margin-bottom: .45rem;
+                    font-size: .75rem;
+                    color: #ff6b00;
+                    height: 1.2rem;
+                    line-height: 1.2rem;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    word-break: break-all;
+                    .number{
+                        font-size: .75rem;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        word-break: break-all;
+                        em{
+                            font-size: 1rem;
+                            line-height: 1rem;
+                            vertical-align: top;
+                        }
+                    }
+                }
+                & > p.bottom{
+                    text-align: center;
+                    color: #ff6b00;
+                    font-size: .5rem;
+                    color: #a1a1a1;
+                }
+            }
+            & li.date{
+                width: 25%;
+            }
+        }
+        
+    }
+
+
+
+}
+
+ 
+ //tab标签样式
+ .listWrap{
+
+    .nav-wrapper{
+        background: #fff;
+        height: 2rem;   
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-bottom: 0.5rem;
+        padding-top: .5rem;
+     }
+    
+     .mui-segmented-control.mui-scroll-wrapper{
+         height: 1rem;
+     }
+    
+     .mui-segmented-control.mui-scroll-wrapper .mui-scroll{
+        text-align: center;
+        font-size: .75rem;
+        color: @cor-999;
+        height: 1rem;
+     }
+    
+    
+     .mui-segmented-control.mui-segmented-control-inverted .mui-control-item{
+        width: 3.625rem;
+        height: 1rem;
+        line-height: 1rem;
+        padding: 0;
+        position: relative;
+        font-size: .6rem;
+        
+     }
+    
+     .mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+        color: #fff;
+        background-color: #ff6b00;
+        border-radius: .2rem;
+    
+     }
+    
+    //  .mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active::before{
+    //     content: '';
+    //     display: inline-block;
+    //     width: 3.125rem;
+    //     height: .125rem;
+    //     background: @cor-ff6b00;
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 50%;
+    //     margin-left: -1.51rem;
+    //   }
+    
+    //  .mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active::after{
+    //       content: '';
+    //       display: inline-block;
+    //       position: absolute;
+    //       bottom: 0;
+    //       left: 50%;
+    //       margin-left: -0.2rem;
+    //       width: 0; 
+    //       height: 0; 
+    //       border-left: .2rem solid transparent; 
+    //       border-right: .2rem solid transparent; 
+    //       border-bottom: .4rem solid @cor-ff6b00;
+    // }
+
+ }
+ 

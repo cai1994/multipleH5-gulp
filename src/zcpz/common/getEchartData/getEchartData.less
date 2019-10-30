@@ -1,0 +1,40 @@
+
+@import url('~@common/less/color.less');
+.echartWrap{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+
+	.echartMask{
+		position: absolute;
+		z-index: 20;
+		background: @c066;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+	.myChart{
+		padding: .5rem .65rem .25rem;
+		width: 100%;
+		height: 20rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		&#xzPie{
+			z-index: 5;
+		}
+
+		&#tjPie{
+			z-index: 10;
+		}
+		&#bar{
+			z-index: 15;
+		}
+	}
+
+}

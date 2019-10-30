@@ -1,0 +1,137 @@
+/**
+ * item组件的样式
+ *
+ * @author yangjinlai 2018-07-31
+ */
+
+ @import url('../../../less/color.less');
+
+
+.itemUl{
+
+	margin-bottom: 0.4rem;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	li{
+		padding: 0 0.2rem;
+		display: table;
+		width: 100%;
+		position: relative;
+
+		//复选框
+		.check{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 0.2rem;
+
+			.checkBox{
+				margin-right: 0;
+			}
+		}
+		span{
+			font-size: 0.26rem;
+		}
+	}
+
+
+	.title{
+		vertical-align: middle;
+		display: table-cell;
+
+		// .txt, .subTxt{
+		// 	display: block;
+		// }
+
+		.txt{
+			color: @c050;
+			font-size: 0.28rem;
+		}
+
+		.subTxt{
+			font-size: 0.18rem;
+			color: @c054;
+
+			.iconfont{
+				font-size: .2rem;
+				color: @c006;
+			}
+		}
+		//max-width: 3rem;
+	}
+
+	.result{
+		color: @c040;
+		display: table-cell;
+		text-align: right;
+		vertical-align: middle;
+		//width: 1.6rem;
+		min-width: 1.62rem;
+	}
+	.blue{
+		color: @c068;
+	}
+	//每行有下边框
+	&.type_1{
+		background: @c005;
+
+		li{
+			//min-height: 0.98rem;
+			//border-color: #e8e8e8;
+			//border-style: solid;
+			padding-top: 0.3rem;
+			padding-bottom: 0.3rem;
+			//line-height: 0.98rem;
+			
+			//border-bottom: 0.5px solid @c071;
+			
+
+		}
+	}
+	
+	//无下边框
+	&.type_2{
+		background: @c005;
+		padding-top: 0.3rem;
+		padding-bottom: 0.3rem;
+
+		li{
+			margin-bottom: 0.3rem;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			&.marginBottom{
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	//文字和结果水平居中显示
+	&.type_3{
+		background: @c005;
+
+		li{
+			text-align: center;
+			// height: 0.98rem;
+			// line-height: 0.98rem;
+			border-color: @c041;
+			border-style: solid;
+			
+
+			.title{
+				display: inline-block;
+				float: none;
+			}
+
+			.result{
+				display: inline;
+			}
+		}
+		
+	}
+}

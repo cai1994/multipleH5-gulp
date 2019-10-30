@@ -1,0 +1,59 @@
+// 左右滑动nav样式，tab标签样式
+@import '../../common/less/sliderNav.less';
+
+
+.taskRank {
+
+    .dataList {
+        &:first-child {
+            margin-bottom: 0.5rem;
+
+            &.current .listTypeFour {
+                background-color: #fff;
+            }
+
+        }
+
+        &:last-child {
+            .listTypeFour {
+                border-bottom: none;
+            }
+        }
+
+        &.current {
+            .listTypeFour {
+                background-color: #fffbf6;
+            }
+        }
+    }
+
+    .nav-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 0;
+
+
+
+    }
+
+    // 导航样式重置
+    .listWrap .mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item {
+        width: auto;
+        margin: 0 0.7rem;
+
+        &.mui-active {
+            &:before {
+                width: 100%;
+                margin-left: 0;
+                left: 0;
+            }
+
+            &:after {
+                content: none;
+            }
+        }
+    }
+    .listWrap .mui-segmented-control.mui-scroll-wrapper .mui-scroll{
+        border-bottom: 1px solid #e9e9e9;
+    }
+}

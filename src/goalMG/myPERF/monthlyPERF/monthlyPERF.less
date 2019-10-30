@@ -1,0 +1,144 @@
+@import '~@common/less/color.less';
+
+.page {
+    min-height: 100%;
+    padding-top: 2.25rem;
+    background-color: #fff;
+
+    header {
+        width: 100%;
+        max-width: 750px;
+        height: 1.5rem;
+        font-size: .85rem;
+        padding: 1rem .5rem 0.09rem;
+        box-sizing: content-box;
+        line-height: 1.8rem;
+        position: fixed;
+        top: 0;
+        background-color: #fff;
+        margin-bottom: .5rem;
+        z-index:100;
+
+        .titleSpan {
+            padding: 0 10vw;
+            height: 1.5rem;
+            display: flex;
+            justify-content: space-around;
+            .title{
+                color: @cor-ff6b00;
+            }
+            .title::after {
+                content: "";
+                margin: 0 auto;
+                display: block;
+                width: 100%;
+                height: 0.09rem;
+                background-color: @cor-ff6b00;
+            }
+        }
+
+        .filter {
+            position: absolute;
+            top: 1.25rem;
+            left: 0.6rem;
+            width: .75rem;
+            height: 1.0rem;
+            z-index: 9;
+        }
+        .toYear{
+            font-size: 0.9rem;
+            height: 1.5rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    .dataDetail {
+        background: linear-gradient(#303344, #3d4154);
+        background: linear-gradient(left, #303344, #3d4154);
+        background: linear-gradient(right, #3d4154, #303344);
+        background: linear-gradient(-90deg, #303344, #3d4154);
+        padding-top: 1rem;
+
+        .datasPERF {
+            padding-bottom: 5rem;
+            margin: 0 5vw;
+        }
+    }
+
+    .detailPREF {
+        text-align: right;
+        font-size: 0.8rem;
+        margin-right: 5vw;
+        color: #394259;
+    }
+
+    .chartBlock {
+        margin-top: -5rem;
+        background-color: #fff;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        padding-top: 1rem;
+
+        .titleEchart {
+            color: #333;
+            width:55%;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-left: 5vw;
+            padding-left: 0.8rem;
+            position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0.2rem;
+			left: 0;
+			display: inline-block;
+			width: 0.2rem;
+			height: 0.8rem;
+			background-color: @cor-ff6b00;
+		}
+        }
+
+        .detailPREF {
+            display: inline-block;
+            float: right;
+            .icon {
+                display: inline-block;
+                margin-top: 0.1rem;
+                box-sizing: border-box;
+                border-top: rgba(0, 0, 0, 0) 0.25rem solid;
+                border-bottom: rgba(0, 0, 0, 0) 0.25rem solid;
+                border-right: rgba(0, 0, 0, 0) 0.5rem solid;
+                border-left: #ccc 0.5rem solid;
+
+            }
+        }
+    }
+
+    .footNote {
+        background-color: #f7f9fc;
+        margin: 1rem 5vw 0;
+        font-size: 0.7rem;
+        .tips {
+            position: relative;
+            height: 1.2rem;
+            p { 
+                position: absolute;
+                top:-20%;
+                background-color: @cor-ccc;
+                border-radius: 0.6rem;
+                display: inline-block;
+                width: 2.5rem;
+                height: 1.2rem;
+                line-height: 1.2rem;
+                text-align: center;
+                color: #fff;
+                font-size: 0.6rem;
+            }
+        }
+        .text{
+            font-size:0.6rem; 
+            padding:0 3vw 3vw;
+        }
+    }
+}

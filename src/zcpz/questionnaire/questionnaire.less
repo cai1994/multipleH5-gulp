@@ -1,0 +1,85 @@
+/**
+ * 问卷页面样式
+ */
+
+@import url('~@src/common/form/form.less');
+
+//@import url('~@src/common/check/check.less');
+.listSection{
+	position: absolute;
+	z-index: 20;
+	width: 100%;
+	border-top: 0.025rem solid #e5e5e5;
+}
+.question{
+	background: @c005;
+	padding-left: 0.8rem;
+	padding-right: 0.8rem;
+
+	&.tkQuestion{
+		padding-left: 0;
+		padding-right: 0;
+		background: @c066;
+
+		.quesLi{
+			margin-bottom: 0.4rem;
+			padding-left: 0.8rem;
+			padding-right: 0.8rem;
+			background: @c005;
+		}
+
+	}
+
+	//重置表单样式
+	.formSection{
+		background: @c005;
+		padding-bottom: 0;
+
+		.item:first-child{
+			margin-top: 0;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	
+
+	//题目
+	.topic{
+		//height: 3.65rem;
+		font-size: 1.1rem;
+		color: @cor-333;
+		border-bottom: 0.025rem solid @cor-e9e9e9;
+		padding-top: 1.2rem;
+		padding-bottom: 1.2rem;
+		    font-weight: 600;
+		line-height: 1.8rem;
+		//line-height: 0.6rem;
+	}
+
+	//选项
+	.list{
+		li{
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			color: @cor-666;
+			overflow: hidden;
+			font-size: 0.7rem;
+			border-bottom: 0.025rem solid @cor-e9e9e9;
+
+			&:last-child{
+				border-bottom: 0;
+			}
+
+			.txt{
+				float: left;
+				//font-size: 0.7rem;
+			}
+
+			.radioBox{
+				float: right;
+			}
+		}
+	}
+}
+

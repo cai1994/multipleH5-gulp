@@ -1,0 +1,71 @@
+.progressCon{
+    margin: 1rem;
+    vertical-align: middle;
+    & label{
+        font-size: .5rem;
+        color: #a1a1a1;
+        display: inline-block;
+        width: 15%;
+    }
+    & .progressBox{
+        width: 83%;
+        display: inline-block;
+        position: relative;
+        .mui-progressbar{
+            width: 80%;
+            left: 3%;
+            height: .2rem;
+            border-radius: .1rem;
+            background: #f5f7f7;
+            span{
+                background: #ff6b00;
+            }
+        }
+        & > span{
+            position: absolute;
+            font-size: .5rem;
+            color: #a1a1a1;
+            top: -.25rem;
+        }
+        & .start{
+            left: 0; 
+        }
+        & .end{
+            right: 0;
+        }
+
+        & .hintWord {
+            width: auto;
+            position: absolute;
+            bottom: -1rem;
+            background-color: #ff6b00;
+            border-radius: .15rem;
+            & > label {
+            min-width: 1.4rem;
+            display: block;
+            font-size: .45rem;
+            color: #fff;
+            text-align: center;
+            padding: 0 .25rem;
+            width: auto;
+            }
+            & > i {
+            width: 0px; 
+            height: 0px; 
+            position: absolute; 
+            left: 0; 
+            // right: 0; 
+            top: -.13rem;
+            margin: 0 auto; 
+            border: .16rem solid #ff6b00; 
+            // border-left-color: transparent; 
+            // border-right-color: transparent; 
+            // border-top-color: transparent;
+            border-right-color: transparent;
+            border-top-color: transparent;
+            }
+            }
+        
+    }
+
+  }

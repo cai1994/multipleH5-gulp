@@ -1,0 +1,79 @@
+/**
+ * 对号样式
+ *
+ * @author yangjinlai 2019-05-13
+ */
+
+@import url('~@common/less/color.less');
+// .check{
+
+// 	//font-family: 'iconfont';
+
+// 	//未选中状态
+// 	&:before {
+// 	    content: '\e615';
+// 	    color: @cor-ff6b00;
+// 	}
+
+// 	//选中，增加checked class
+// 	&.checked:before {
+// 	    content: '\e618';
+// 	    color: @cor-ff6b00;
+// 	}
+
+
+// }
+// 
+@size: 0.7rem;
+
+.checkBox{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 8px;
+	position: relative;
+	width: @size;
+	height: @size;
+	margin-top: 1px;
+
+	input[type=checkbox], input[type=radio]{
+		width: @size;
+		height: @size;
+		position: absolute;
+		left: 0;
+		cursor: pointer;
+		z-index: 2;
+
+		&+label{
+			display: inline-block;
+			width: @size;
+			height: @size;
+			position: relative;
+			line-height: @size;
+
+			//未选中状态
+			&:after{
+				content: '\e615';
+				position: absolute;
+				top: 0;
+				left: 0;
+				//height: 100%;
+				//width: 100%;
+				font-size: @size;
+				color: @cor-ccc;
+				//color: #f4cf5c;
+			}
+		}
+
+		//选中
+		&:checked +label{
+
+			&:after{
+				content: '\e618';
+				color: @cor-ff6b00;
+			}
+			
+		}
+	}
+
+}
+

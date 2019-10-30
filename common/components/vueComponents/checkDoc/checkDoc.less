@@ -1,0 +1,75 @@
+/**
+ * checkDoc结构的样式
+ */
+
+@import url('../../../less/color.less');
+.checkDoc{
+	padding: 0.2rem 0.2rem 0 0.2rem;
+	background: @c005;
+
+	.checkD{
+		width: 100%;
+		display: table;
+
+		.check{
+			display: inline-block;
+			line-height: .16rem;
+			    vertical-align: top;
+		}
+
+		.checkDocTxt{
+			display: table-cell;
+			vertical-align: top;
+			line-height: 0.22rem;
+
+			.txt{
+				display: table-cell;
+				vertical-align: top;
+				font-size: .22rem;
+				color: @c054;
+				word-wrap: normal;
+			    word-break: normal;
+			    white-space: nowrap;
+			    padding-right: 0.2rem;
+			}
+
+			.checkDocDiv{
+				display: table-cell;
+
+				.checkDocLi{
+					float: left;
+					font-size: 0.22rem;
+					margin-bottom: 0.2rem;
+					
+					//border-color: @c067;	
+					a{
+						color: @c067;
+						padding-left: 0.1rem;
+						padding-right: 0.1rem;
+						border-right: 1px solid #1983c0;	
+					}
+
+					&:first-child{
+						a{
+							padding-left: 0;
+						}
+						
+					}
+
+					&:last-child{
+						a{
+							padding-right: 0;
+							border-right: 0;
+						}
+						
+					}
+
+					
+				}
+
+			}
+
+		}
+
+	}
+}

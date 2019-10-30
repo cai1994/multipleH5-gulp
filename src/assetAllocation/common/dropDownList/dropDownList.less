@@ -1,0 +1,138 @@
+@import '~@common/less/color.less';
+.dropDownList{ 
+    .orange{
+        color:@cor-ff6b00;
+    }
+    .cl-3c3c3c{
+        color:@cor-3c3c3c; 
+    }
+    .cl-999{
+        color:@cor-999; 
+    }
+    .cl-666{
+        color:@cor-666;
+    }
+    .size30{
+        font-size: 0.75rem;
+    }
+    .size32{
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+    .mar-l-38{
+        margin-left: .95rem;
+    }
+    .mar-l-20{
+        margin-left: .5rem;
+    }
+    .mar-l-28{
+        margin-left: .7rem;
+    }
+    .mar-l-16{
+        margin-left: .4rem;
+    }
+    .mar-l-10{
+        margin-left: .25rem;
+    }
+    .item:nth-child(1) {
+        margin-top: .5rem;
+    }
+    .item{
+        margin-bottom: .5rem;
+        background-color: @c005;
+        .header{
+            width: 100%;
+            height: 3.75rem;
+            padding: .7rem 0;
+            position: relative;
+            .scale{
+                width: 100%;
+                height: .8rem;
+                line-height: .8rem;
+                margin-top: .3rem;
+                span{
+                    vertical-align: middle;
+                    float: left;
+                }
+                .orangeline{
+                    width: .2rem;
+                    height: .75rem;
+                    background-color:@cor-ff6b00;
+                }
+            }
+            .money{
+                padding-left: .7rem;
+                margin-top: .35rem;
+                font-size: .7rem;
+            }
+            .dropDownBtn{
+                position: absolute;
+                width: .85rem;
+                height: .85rem;
+                top: 1.45rem;
+                right: .75rem;
+                font-size: 0.85rem;
+                color: @cor-ff6b00;
+                &.down:before {
+                    content: '\e616'
+                }
+                &.up:before {
+                    content: '\e617'
+                }
+            }
+
+        }
+        .fold{
+            font-size: .7rem;
+            border-top: 1px solid @c007;
+            .foldItem{
+                margin:0 1.15rem;
+                border-bottom: 1px solid @cor-e9e9e9;
+                .title{
+                    height: 2.45rem;
+                    line-height: 2.45rem;
+                    border-bottom: 1px solid @cor-e9e9e9;
+                    span:nth-child(1) {
+                        margin-right: .3rem;
+                    }
+                }
+                .foldItemList{
+                    padding-bottom: .75rem;
+                    .listItem{
+                        .productName{
+                            margin-top: 1.1rem;
+                            span,i{
+                                display: inline-block;
+                                vertical-align: baseline;
+                            }
+                            .checkbox{
+                                width: .7rem;
+                                height: .7rem;
+                                font-size: .7rem;
+                                font-weight: lighter;
+                                &.noCheck:before {
+                                    content: '\e615';
+                                    color: @cor-ccc;
+                                }
+                                &.checked:before {
+                                    content: '\e618';
+                                    color: @cor-ff6b00;
+                                }
+                            }
+                        }
+                        .productDetails{
+                            margin-top: .7rem;
+                            font-size: .6rem;
+                            line-height: 1rem;
+                            padding-left: 1.5rem;
+                        }
+                    }
+                }
+                
+            }
+            .foldItem:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}

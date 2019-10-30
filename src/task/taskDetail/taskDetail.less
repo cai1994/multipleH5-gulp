@@ -1,0 +1,145 @@
+.taskDetail {
+
+
+    .pageTitle{
+        padding-bottom: 0.6rem;
+    }
+
+    // 表单展示
+    .ts {
+        padding: 0.5rem;
+
+        taskDetail.js .formDisplay {
+            border-radius: 0.2rem;
+        }
+
+        .formDisplay ul li{
+            margin:0 .8rem;
+            padding:1px 0;
+        }
+    }
+
+    // 倒计时
+    .cdWrap {
+        background: #fff;
+        color: #ff6600;
+        font-size: 0.7rem;
+        padding-left: 0.6rem;
+        padding-bottom: 0.8rem;
+
+        .cdSpan {
+            padding: 0.1rem;
+            color: #fff;
+            font-size: 0.6rem;
+            background-image: linear-gradient(-30deg,
+                #f84f35 0%,
+                #fda316 100%),
+                linear-gradient(#ffffff,
+                #ffffff);
+            border-radius: 0.1rem;
+        }
+
+        .cd_2 {
+            display: inline-block;
+
+            .cdUl li {
+                label {
+                    font-size: 0.7rem;
+                    color: #ff6600;
+                    margin-left: 0.2rem;
+                    margin-right: 0.1rem;
+                }
+
+                span {
+                    color: #999;
+                }
+            }
+
+        }
+
+    }
+
+    // 排名区域
+    .tdRank {
+        position: relative;
+
+        img{
+            margin-top: 0.2rem;
+        }
+
+        .tdr_1 {
+            position: absolute;
+            left: 5.8rem;
+            top: 1.7rem;
+
+            .tdr_2 {
+                font-size: 1rem;
+                color: #fff;
+
+                .tdr_3 {
+                    margin-left: 0.3rem;
+                    margin-right: 0.3rem;
+                }
+            }
+
+            .tdr_4 {
+                color: #f5f7f7;
+                font-size: 0.6rem;
+                // margin-top: 0.1rem;
+                opacity: 0.8;
+
+                .tdr_5 {
+                    margin-left: 0.2rem;
+                }
+            }
+        }
+
+
+    }
+
+    .pdInfo {
+
+        // 任务项目样式重置
+        .coUl .coLi {
+            border-bottom: none;
+
+            &.show {
+                padding-bottom: 0;
+
+            }
+
+            /* &:last-child {
+                padding-bottom: 0.5rem;
+            } */
+
+
+        }
+
+        .listTypeTwo {
+            margin-bottom: 0;
+            border-bottom: 1px solid #e9e9e9;
+
+            .lttH3 {
+                font-size: 0.6rem;
+                line-height: 0.9rem;
+                color: #333;
+                padding: 0.2rem 0 0.2rem 0.4rem;
+                position: relative;
+                border-bottom: none;
+
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    width: .1rem;
+                    height: .5rem;
+                    background: rgb(255, 107, 0);
+                    position: absolute;
+                    top: 0.4rem;
+                    left: 0rem;
+                }
+
+            }
+
+        }
+    }
+}

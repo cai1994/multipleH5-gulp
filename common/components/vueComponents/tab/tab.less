@@ -1,0 +1,53 @@
+
+    @import url('../../../less/reset.less');
+
+    .mytab{
+        .tab_div{
+            position:relative;
+            display:flex;
+            justify-content: space-around;
+            -webkit-justify-content: space-around;
+            font-size:.7rem;
+            color:@c040;
+            background: #ffffff;
+            // .tabLine{
+            //     content:"";
+            //     position:absolute;
+            //     bottom:-0.01rem;
+            //     width:100%;
+            //     height:0.01rem;
+            //     background-color:@c041;
+            // }
+            div{
+                position:relative;
+                height:1.4rem;
+                line-height: 1.4rem;
+            }
+            .tabs-active{
+                // color:@c006;
+                &:before{
+                    content:"";
+                    position:absolute;
+                    bottom:0;
+                    left: 50%;
+                    // margin-left: -0.35rem;
+                    // width:.7rem;
+                    margin-left: -48.75%;
+                    width: 100%;
+                    height:0.1rem;
+                    border-radius:0.05rem;
+                    background-color:#f84f35;
+                }
+            }
+
+        }
+        .tabCon{
+            // padding:0.32rem 0 0.34rem;
+            // font-size:0.26rem;
+            img{
+                width:100%;
+                height:auto;
+            }
+
+        }
+    }

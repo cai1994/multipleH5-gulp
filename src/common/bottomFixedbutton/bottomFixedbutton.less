@@ -1,0 +1,107 @@
+/**
+ * 底部按钮
+ *
+ * 一个按钮：
+ *
+ * 两个按钮：.twoButton
+ *  type_1的样式：两个按钮都是白底，黄框，黄色文字
+ */
+
+@import url('~@common/less/color.less');
+
+.footer{
+    width: 100%;
+    box-shadow: 0 -0.125rem .125rem #e7e8e8;
+    height: 2.525rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: .25rem .5rem;
+    background: #fff;
+    
+
+    //底部按钮一个的时候
+    & .bottomFixedBtn{
+        display: inline-block;
+        height: 2rem;
+        width: 100%;
+        border-radius: 1rem;
+        background: @cor-ff6b00;
+        // box-sizing: border-box;
+        color: #fff;
+        
+
+        //box-shadow: inset 0 -0.125rem .125rem @cor-ff6b00;
+        // text-align: center;
+        // line-height: 2rem;
+        font-size: 0.7rem;
+        // transform: scale(0.5);
+        // transform-origin: 0% 0%;
+        
+        //一个按钮且不可选中时
+        // &[disabled=disabled]{
+        //     background: @cor-ccc;
+        // }
+    }
+
+    //两个按钮的时候
+    & .twoButton{
+        overflow: hidden;
+        display: inline-block;
+        height: 2rem;
+        width: 100%;
+        //box-shadow: inset 0 -0.125rem .125rem @cor-ff6b00;
+        text-align: center;
+
+        input{
+            width: calc(~"(100% - 0.5rem)/2");
+            display: inline-block;
+            border-radius: 1rem;
+            font-size: .7rem;
+            line-height: 2rem;
+            height: 2rem;
+
+
+
+            //一个按钮且不可选中时
+            // &:disabled{
+            //     background: @cor-ccc;
+            // }
+
+            //type_1，白底，黄框，黄色文字
+            &[btnType=type_1]{
+                border: 0.025rem solid @cor-ff6b00;
+                color: @cor-ff6b00;
+
+                //重置原来底层的点击时的黄色
+                &:enabled:active{
+                    background:  @c005;
+                }
+            }
+
+            //type_2，黄底，白色文字
+            &[btnType=type_2]{
+                //border: 0.025rem solid @cor-ff6b00;
+                background: @cor-ff6b00;
+                color: @c005;
+
+                //重置原来底层的点击时的黄色
+                &:enabled:active{
+                    background: @cor-ff6b00;
+                }
+            }
+
+
+        }
+
+        .leftButton{
+            float: left;
+        }
+        .rightButton{
+            float: right;
+        }
+
+        
+    }
+
+}

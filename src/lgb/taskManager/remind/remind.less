@@ -1,0 +1,265 @@
+// body{
+    // padding-bottom: 2.5rem;
+// }
+.planner{
+  padding-left: .825rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  width: 8.5rem;
+  height: 1.15rem;
+  line-height: 1.15rem;
+  box-sizing: border-box;
+  font-size: .6rem;
+  color: #666666;
+  border-radius: 0 .65rem .65rem 0;
+  background-image: linear-gradient(
+		#ffffff, 
+		#ffffff), 
+	linear-gradient(
+		#ffffff, 
+		#ffffff);
+	background-blend-mode: normal, 
+		normal;
+	box-shadow: 0px 0px 5px 0px 
+		rgba(0, 0, 0, 0.08);
+}
+.estimate{
+  position: fixed;
+  bottom: 2.525rem;
+  left: 0;
+  width: 100%;
+  height: 8.65rem;
+  padding: .825rem .75rem 0 .75rem;
+  background: #ffffff;
+  border-top: 1px solid #EAECEB;
+  box-shadow: 0px -2px 5px 0px	rgba(0, 0, 0, 0.08);
+  textarea{
+    padding-top: 0.5rem;
+    height: 100%;
+    color: #999999;
+    font-size: .65rem;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+    color: #999999;
+    font-size: .65rem;
+  }
+
+  input:-moz-placeholder,input::-moz-placeholder,textarea:-moz-placeholder,textarea::-moz-placeholder {
+      color: #999999;
+      font-size: .65rem;
+  }
+
+  input:-ms-input-placeholder,textarea:-ms-input-placeholder {
+      color: #999999;
+      font-size: .65rem;
+  }
+
+
+  // textarea::-webkit-input-placeholder{
+  //   color: #999999;
+  //   font-size: .65rem;
+  // }
+  // textarea::-moz-placeholder{   /* Mozilla Firefox 19+ */
+  //   color: #999999;
+  //   font-size: .65rem;
+  // }
+  // textarea:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+  //   color: #999999;
+  //   font-size: .65rem;
+  // }
+  // textarea:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+  //   color: #999999;
+  //   font-size: .65rem;
+  // }
+}
+.seeMoreLine{
+  width: 100%;
+  height: .55rem;
+  background: url(/fc/static/img/line.png) no-repeat center center;
+  background-size: 100% 100%;
+  margin: .875rem 0;
+}
+.evaluate{
+  min-height: 8.875rem;
+  h2{
+    margin-left: .75rem;
+    font-size: .8rem;
+    line-height: 1.15rem;
+    color: #666;
+    margin-bottom: .25rem;
+  }
+  p{
+    padding: 0 .75rem;
+    font-size: .65rem;
+    line-height: 1.2rem;
+    color: #999999;
+    word-wrap: break-word;
+    word-break: normal;
+  }
+}
+  .activityCon{
+    margin: 0 .5rem;
+    .topCon{
+      width: 100%;
+      height: 3.85rem;
+      background: url(/fc/static/img/topbg.png) no-repeat center center;
+      background-size: 100% 100%;
+      .topImgBox{
+        float: left;
+        margin-top: .75rem;
+        margin-left: .75rem;
+        width: 2.25rem;
+        height: 2.25rem;
+        border-radius: .125rem;
+      }
+      .clientMsg{
+        float: left;
+        margin-top: .77rem;
+        margin-left: .5rem;
+        color: #ffffff;
+        .clientName{
+          // margin-top: .05rem;
+          margin-bottom: .65rem;
+          line-height: .8rem;
+          font-size: .8rem;
+          font-weight: 600;
+        }
+        .visit{
+          font-size: .6rem;
+        }
+      }
+      // i{
+      //   font-size: .9rem;
+      //   color: #fff;
+      //   line-height: 2.425rem;
+      //   margin-left: .825rem;
+      //   float: left;
+      // }
+      // span{
+      //   width: 3rem;
+      //   height: .9rem;
+      //   text-align: center;
+      //   line-height: .9rem;
+      //   font-size: .55rem;
+      //   color: #ff6000;
+      //   background-color: #fff;
+      //   float: left;
+      //   border-radius: .5rem;
+      //   margin-top: .75rem;
+      //   margin-left: .75rem;
+      // }
+    }
+    .contentCon{
+      width: 100%;
+      min-height: 2.5rem;
+      height: auto;
+      background-color: #fff;
+      border-bottom-right-radius: .25rem;
+      border-bottom-left-radius: .25rem;
+      box-shadow: 0px 4px 10px #e5e5e5;
+      padding-bottom: 1rem;
+      &.noRadius{
+        border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      }
+      .listCon{
+        margin: 0 .75rem;     
+      }
+      .basicInfo{
+        padding-bottom: .5rem;
+        border-bottom: .025rem solid #e5e5e5;
+        padding-top: .375rem;
+        .fontWeight{
+          color: #333333;
+        }
+        h2{
+          font-size: .8rem;
+          line-height: 1.15rem;
+          color: #666;
+          margin-bottom: .25rem;
+        }
+        p{
+          font-size: .65rem;
+          line-height: 1.25rem;
+          color: #999;
+        }
+      }
+      .businessInfo{
+        padding-top: .375rem;
+        padding-bottom: .5rem;
+        border-bottom: .025rem solid #e5e5e5;
+        h2{
+          font-size: .8rem;
+          line-height: 1.15rem;
+          color: #666;
+          margin-bottom: .25rem;
+        }
+        p{
+          font-size: .65rem;
+          line-height: 1.25rem;
+          color: #999;
+          word-break: break-all;
+          min-height: 1.25rem;
+        }
+      }
+      .visitInfo{
+        padding-top: .375rem;
+        padding-bottom: .5rem;
+        min-height: 8rem;
+        h2{
+          font-size: .8rem;
+          line-height: 1.15rem;
+          color: #666;
+          margin-bottom: .25rem;
+        }
+        p{
+          font-size: .65rem;
+          line-height: 1.25rem;
+          color: #999;
+          word-break: break-all;
+          min-height: 1.25rem;
+        }
+      }
+      .more{
+        color: #ff6000;
+        font-size: .6rem;
+        line-height: 1.2rem;
+        text-align: center;
+        span{
+          position: relative;
+        }
+        
+      }
+      .down span:after{
+        content: "";
+        width: .475rem;
+        height: .45rem;
+        position:absolute;
+        right:-0.75rem;
+        top: .2rem;
+        background: url(/fc/static/img/seemore.png) no-repeat center center;
+        background-size: 100% 100%;
+      }
+      .up span:after{
+        content: "";
+        width: .475rem;
+        height: .45rem;
+        position:absolute;
+        right:-0.75rem;
+        top: .2rem;
+        background: url(/fc/static/img/seemoreup.png) no-repeat center center;
+        background-size: 100% 100%;
+      }
+      
+      
+      
+    }
+  }
+.bottomBox{
+  width: 100%;
+  height: 11.175rem;
+}

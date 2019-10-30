@@ -1,0 +1,119 @@
+
+.contentBg{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(000, 000, 000, 0.5);
+  .boxCon{
+    width: 14.75rem;
+    height: auto;
+    background-color: #fff;
+    border-radius: .25rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -10.5rem;
+    margin-left: -7.375rem;
+    .tktopCon{
+      width: 100%;
+      height: 2.375rem;
+      background: url(/fc/static/img/tktopbg.png) no-repeat center center;
+      background-size: 100% 100%;
+      text-align: center;
+      color: #fff;
+      line-height: 2.375rem;
+      font-size: .8rem;
+    }
+    .evaluateCon{
+      overflow: hidden;
+      
+      h2{
+        font-size: .7rem;
+        color: #333;
+        margin: .75rem .5rem .25rem;
+        span{
+          color: #999;
+        }
+      }
+      .scoreList{
+        margin: .0 .5rem;
+        li{
+          margin: .5rem 0;
+        }
+        .scoreL{
+          font-size: .65rem;
+          color: #999;
+          
+          text-align: left;
+          width: 3.0rem;
+          float: left;
+        }
+        .scoreR {
+          float: right;
+          font-size: 0;
+          span{
+            font-size: .75rem;
+            display: inline-block;
+            margin: 0 .2rem;
+            color: #e2e4e8;
+            
+          }
+          span.light{
+            color: #ff6000;
+          }
+          span.off{
+            color: #e2e4e8;
+          }
+        }
+      }
+      .write{
+        width: 100%;
+        height: 5.875rem;
+        background-color: #f9f9f9;
+        padding: .75rem 0.5rem;
+        .tip{
+          background: url(/fc/static/img/pen.png) no-repeat left center;
+          background-size: .625rem .625rem;
+          text-indent: 1rem;
+          font-size: .65rem;
+          color: #999;
+
+        }
+        textarea{
+          width: 100%;
+          height: 100%;
+          outline: none;
+          font-size: .65rem;
+          color: #333;
+          line-height: 1rem;
+          border: none;
+          background-color: #f9f9f9;
+        }
+      }
+      .saveBtn{
+        height: 2rem;
+        width: 13.25rem;
+        border-radius: 1rem;
+        background: #ff6b00;
+        color: #fff;
+        font-size: .7rem;
+        box-shadow: inset 0 -0.125rem 0.125rem #f9561f;
+        text-align: center;
+        line-height: 2rem;
+        margin: .5rem auto;
+      }
+    }
+    .close{
+      width: 1.6rem;
+      height: 1.6rem;
+      background: url(/fc/static/img/close.png) no-repeat center center;
+      background-size: 100% 100%;
+      position: absolute;
+      bottom: -2rem;
+      left: 50%;
+      margin-left: -0.8rem;
+    }
+  }
+}

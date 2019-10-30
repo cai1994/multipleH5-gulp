@@ -1,0 +1,33 @@
+@import url('../../../../less/color.less');
+@import url('../common/common.less');
+@import url('../../../muiComponents/muiPop/resetMuiPop.less');
+@import url('../../../../../web/include/vendor/mui/mui.picker.all.css');
+@import url('../../../../../web/include/vendor/mui/mui.poppicker.css');
+@import url('../../../../../web/include/vendor/mui/mui.picker.css');
+
+.form-select {
+  .mui-table-view {
+    position: initial;
+    text-align: right;
+    margin-left: 35%;
+
+    &:before,&:after{
+      content:none;
+    }
+
+    .mui-navigate-right {
+      font-size: 0.27rem;
+      padding: 0 0.5rem 0 0;
+      line-height: 0.98rem;
+      height: 0.98rem;
+      color: @c048;
+    }
+
+    .mui-navigate-right:after, .mui-push-right:after{
+      right:0;
+    }
+    .mui-table-view-cell.mui-active{
+      background-color: @c005;
+    }
+  }
+}

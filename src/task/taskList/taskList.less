@@ -1,0 +1,40 @@
+
+@import '../../common/less/sliderNav.less';
+
+.page {
+
+    .dataList {
+        margin-bottom: 0.5rem;
+
+        .pageTitle {
+            border-bottom: 1px solid #e9e9e9;
+            font-size:0.7rem;
+        }
+
+    }   
+    
+    // 导航
+    .listWrap .nav-wrapper{
+        margin-bottom: 0;
+        border-bottom: 1px solid #e9e9e9;
+    }
+
+    .mui-slider-group .tableList li{
+        &:first-child{
+            margin-top: 0.5rem;
+        }
+        &:nth-last-child(2){
+            margin-bottom: 0;
+        }
+    }
+
+    .mui-slider-group{
+        .mui-pull-top-pocket{
+            top: .5rem;
+        }
+        .mui-pull-bottom-pocket{
+            bottom: -0.5rem;
+        }
+    }
+    
+}

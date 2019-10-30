@@ -1,0 +1,105 @@
+/**
+ * 整理项目中表单样式，表单基于mui表单，因此这里重置了mui表单样式
+ * @author yangjinlai 2017-05-04
+ *
+ */
+
+@import url("../../../less/reset.less");
+@import url("../../../less/color.less");
+
+//引入重置mui样式文件
+@import url("../../../less/resetMui.less");
+
+//引入Mui列表样式文件
+@import url("../muiSelect/selectMui.less");
+
+
+.formDom{
+	
+	.formUl.type_1{
+
+		li{
+			//hasDisabled表示已选择且不可修改，
+			//隐藏箭头
+		    &.hasDisabled{
+
+		    	.mui-navigate-right{
+		    		//color: @c050;
+		    		margin-right: 0;
+
+		    		&:after{
+		    			content: '';
+		    		}
+		    	}
+		    	
+		    }
+		}
+
+		label{
+		    color: @c050;
+		    font-size: 0.28rem;
+
+		    .txt{
+		    	color: @c050;
+		    }
+
+		    .subTxt{
+		    	font-size: 0.18rem;
+		    	color: @c054;
+
+		    	.iconfont{
+	    			font-size: .2rem;
+	    			color: @c006;
+	    		}
+		    }
+		}
+
+		input, textarea, .mui-navigate-right{
+		    font-size: 0.28rem;
+		}
+
+		.mui-navigate-right{
+		    margin-right: 0.3rem;
+		    color: @c048;
+
+		    &:after{
+		        color: @c048;
+		        right: 0;
+		        font-size: 0.3rem;
+		    }
+		}
+	}
+
+	
+	//每一行表单元素（输入类，非选择）
+	li{
+
+		label, .mui-input-row{
+			display: table-cell;
+			vertical-align: middle;
+
+		}
+
+		label{
+			max-width: 5.24rem;
+		}
+
+		.mui-input-row{
+			text-align: right;
+
+			.mui-navigate-right{
+				font-size: 0.28rem;
+				height: 100%;
+
+				&:after{
+					content: '\e67d';
+					font-size: 0.3rem;
+				}
+			}
+		}
+
+		
+	}
+
+}
+

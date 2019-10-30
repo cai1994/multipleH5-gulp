@@ -1,0 +1,58 @@
+/**
+ * 列表组件的样式
+ * @author yangjinlai 2019-02-20
+ */
+
+@import url('~@common/less/color.less');
+
+.listWrap{
+
+	//默认name不是靠右的
+	li{
+		height: 3.5rem;
+		margin-top: 0.5rem;
+		background: #fff;
+		padding-left: 0.75rem;
+		padding-right: 0.75rem;
+		line-height: 3.5rem;
+
+		*{
+			vertical-align: middle;
+			display: inline-block;
+		}
+
+		.iconsvg{
+			width: 1.6rem;
+			height:1.6rem;
+			//vertical-align: middle;
+			//display: inline-block;
+		}
+
+        .iconImg{
+            width:2rem;
+            height: 2rem;
+            //display: inline-block;
+            //vertical-align: middle;
+        }
+
+		.name{
+			font-size: 0.7rem;
+		    margin-left: 0.5rem;
+		    //vertical-align: middle;
+		    //display: inline-block;
+		}
+
+		.iconTxt{
+			font-size: 0.7rem;
+			color: @cor-666;
+
+		}
+	}
+
+	//type=rightSide时，name靠右
+	&[type=rightSide]{
+		li .name{
+			float: right;
+		}
+	}
+}
